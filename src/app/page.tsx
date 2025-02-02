@@ -7,12 +7,17 @@ import GearUp from "./components/GearUp";
 import Flight from "./components/Flight";
 import Category from "./components/Catergories";
 import Essential from "./components/Essentials";
+import { Inter } from "next/font/google";
+
+const inter = Inter(
+  { subsets: ["latin"] }
+);
 
 // Responsive Project
 
 export default function Home() {
   return (
-    <div className="w-full h-auto sm:max-w-[1440px] font-medium">
+    <div className={`font-medium ${inter.className}`}>
       <Hero />
 
       <Shoes />

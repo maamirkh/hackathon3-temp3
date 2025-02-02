@@ -10,7 +10,7 @@ const Hero = () => {
     <div>
         <div className='container mx-auto bg-[#F5F5F5] flex flex-col items-center justify-evenly p-2 font-medium text-[12px] sm:text-[15px] leading-6'>
             <h2 className='pb-1'>Hello Nike App</h2>
-            <p className='text-[9px] sm:text-[11px] font-normal '>Download the app to access everything Nike. <span className='font-medium decoration decoration-solid underline undeline-2 cursor-pointer'>Get Your Great</span></p>
+            <p className='text-[9px] sm:text-[11px] font-light '>Download the app to access everything Nike. <span className='font-medium decoration decoration-solid underline undeline-2 cursor-pointer'>Get Your Great</span></p>
         </div>
         <div className='container mx-auto'>
             {/* Image */}
