@@ -19,6 +19,8 @@ import Flight from "./components/Flight";
 import Category from "./components/Catergories";
 import Essential from "./components/Essentials";
 
+// Responsive Project
+
 export default function Home() {
   return (
     <div className="w-full h-auto sm:max-w-[1440px] font-medium">
