@@ -29,20 +29,20 @@ export default function Header (){
                 </div>
                 {/* Navigation Section */}
                 <div id="2" className="hidden sm:flex items-center gap-2 font-medium text-[11px]">
-                    <div className="flex gap-[15px]">
-                        <Link href="/allProducts" >Find a Store</Link>
+                    <div className="flex gap-[15px] ">
+                        <Link href="/allProducts" className="object-cover transform scale-100 hover:scale-110 transition duration-200 ease-in-out" >Find a Store</Link>
                         <span className="w-[2px] h-[14px] bg-black"></span>
                     </div>
                     <div className="flex gap-[15px]">
-                        <Link href="/help" >Help</Link>
+                        <Link href="/help" className="object-cover transform scale-100 hover:scale-110 transition duration-200 ease-in-out" >Help</Link>
                         <span className="w-[2px] h-[14px] bg-black"></span>
                     </div>
                     <div className="flex gap-[15px]">
-                        <Link href="/joinUs" >Join Us</Link>
+                        <Link href="/joinUs" className="object-cover transform scale-100 hover:scale-110 transition duration-200 ease-in-out" >Join Us</Link>
                         <span className="w-[2px] h-[14px] bg-black"></span>
                     </div>
                     <div>
-                        <Link href="/signIn" >Sign In</Link>
+                        <Link href="/signIn" className="object-cover transform scale-100 hover:scale-125 transition duration-200 ease-in-out">Sign In</Link>
                     </div>
                 </div>
                 {/* Hamburger Icon for Mobile */}
