@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link";
 import { useState } from "react";
 
+
 // Images
 import Image1 from "../pics/header/Image1.png"
 
@@ -30,19 +31,19 @@ export default function Header (){
                 {/* Navigation Section */}
                 <div id="2" className="hidden sm:flex items-center gap-2 font-medium text-[11px]">
                     <div className="flex gap-[15px] ">
-                        <Link href="/allProducts" className="hover:text-gray-700" >Find a Store</Link>
+                        <Link href="../products" className="hover:text-gray-700" >Find a Store</Link>
                         <span className="w-[2px] h-[14px] bg-black"></span>
                     </div>
                     <div className="flex gap-[15px]">
-                        <Link href="/help" className="hover:text-gray-700" >Help</Link>
+                        <Link href="/contact" className="hover:text-gray-700" >Help</Link>
                         <span className="w-[2px] h-[14px] bg-black"></span>
                     </div>
                     <div className="flex gap-[15px]">
-                        <Link href="/joinUs" className="hover:text-gray-700" >Join Us</Link>
+                        <Link href="/join-us" className="hover:text-gray-700" >Join Us</Link>
                         <span className="w-[2px] h-[14px] bg-black"></span>
                     </div>
                     <div>
-                        <Link href="/signIn" className="hover:text-gray-700">Sign In</Link>
+                        <Link href="/login" className="hover:text-gray-700">Sign In</Link>
                     </div>
                 </div>
                 {/* Hamburger Icon for Mobile */}
@@ -109,7 +110,9 @@ export default function Header (){
                             <MdOutlineFavoriteBorder className="w-7 h-7 text-[10px] hover:text-gray-600" />
                             </div>
                             <div className="flex items-center justify-center w-9 h-9 rounded-[5px]">
+                            <Link href="/Cart">
                             <BsBag className="w-8 h-6 hover:text-gray-600" />
+                            </Link>
                             </div>
                         </div>
                     </div>

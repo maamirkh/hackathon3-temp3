@@ -8,6 +8,7 @@ import Flight from "./components/Flight";
 import Category from "./components/Catergories";
 import Essential from "./components/Essentials";
 import { Inter } from "next/font/google";
+import ProductCards from "./fetchdata/page";
 
 const inter = Inter(
   { subsets: ["latin"] }
@@ -20,7 +21,8 @@ export default function Home() {
     <div className={`font-medium ${inter.className}`}>
       <Hero />
 
-      <Shoes />
+      {/* <Shoes /> */}
+      <ProductCards/>
 
       <Featured />
 
