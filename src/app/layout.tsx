@@ -11,6 +11,7 @@ import {
   UserButton
 } from '@clerk/nextjs'
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -26,28 +27,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+   
+    <ClerkProvider>
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
+    <body className={inter.className}>
+        
+        {/* <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn> */}
+          
+        <Header/>
+        
         {children}
-        <Footer />
+      
       </body>
     </html>
-    // <ClerkProvider>
-    // <html lang="en">
-    // <body className={inter.className}>
-        
-    //     <SignedOut>
-    //         <SignInButton />
-    //       </SignedOut>
-    //       <SignedIn>
-    //         <UserButton />
-    //       </SignedIn>
-          
-    //     <Header/>
-    //     {children}
-    //   </body>
-    // </html>
-    // </ClerkProvider>
+    </ClerkProvider>
   );
 }

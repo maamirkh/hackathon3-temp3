@@ -10,9 +10,11 @@ import Link from "next/link";
 import { addToCart } from "../../../actions/actions";
 import { client } from "@/sanity/lib/client";
 
+
 const ProductCards = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  
 
   useEffect(() => {
     const fetchProducts = async () => {
