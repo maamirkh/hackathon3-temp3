@@ -13,7 +13,7 @@ interface Props {
   };
 }
 
-export default async function page({ params }: Props) {
+export default async function Productpage({ params }: Props) {
   const { slug } = params;
 
   // Fetch product data from Sanity
@@ -107,3 +107,5 @@ export default async function page({ params }: Props) {
     </div>
   );
 }
+
+
